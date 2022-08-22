@@ -1,0 +1,124 @@
+/*_this is the external css file for your webpage_*/ 
+/*this is the normal way of creating a comment, i added underscore only because i dont like seeing spaces at the start & end and words sticking to the 'star'; so basically it's just own style because im finicky*/
+/*_do not use html code style for css. they are not the same thing, refer to webpageLinks for more clarifications_*/
+/*_~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~end of {____} style modification~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_*/
+/*_{___
+properties
+}_include ending comment for end of _*/
+/*_~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~end of {____} style modification~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_*/
+
+/*_~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~start of {body} style modification~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_*/
+body {/*_anything not specifically styled will take up the style settings in {body}_*/
+font-family: Monaco , sans-serif ; /*_font name, font family (there are 5 main types of font families); 'Monaco' is used instead to show the difference_*/
+font-size: 14px; /*_'px' for pixels, can try 'vw' if confident enough; https://www.w3schools.com/css/css_font_size.asp -> https://www.w3schools.com/css/tryit.asp?filename=trycss_font-size_px_*/
+text-transform: uppercase; /*_transform entire font to only display uppercase_*/
+color: #000000; /*_hex code used; preferred choice because 1 hex code = 1 colour; you can use names too. eg: blue, red, lime-green etc_*/ 
+background: #ffffff; /*_colour for background of webpage; not to be confused with {background-color: ;}_*/
+}/*_end of body_*/ /*_always remember to close brackets, automatically createed if editing in vsCode_*/ 
+/*_~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~end of body style modification~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_*/
+
+
+/*_~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~start of {h1} to {h4} style modification~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_*/
+h1 {/*_h1 = header 1; normally for the main title of the page_*/
+font-family :Georgia , sans-serif; /*_font name, font family (there are 5 main types of font families); 'Georgia' is a commonly used font for headers and is included in github itself, you can customize your own fonts outside of github's list_*/
+font-size: 40px;
+font-variant-numeric: lining-nums; /*_'Georgia font does not come with lining for numbers, so this function has to be manually included'_*/
+font-weight: bold; /*_no 'unit' behind it, only numbers. 400 is typical to bold a font, but it depends on the font type_*/
+text-transform: normal;
+color: #353432;
+text-align: center; /*_text alignment of all the words in the header_*/
+}/*_end of h1_*/
+
+h2 {/*_h2 = header 2; used for navigation panel (top)_*/
+font-family :Georgia , sans-serif; /*_font name, font family (there are 5 main types of font families); 'Georgia' is a commonly used font for headers and is included in github itself, you can customize your own fonts outside of github's list_*/
+font-size: 30px;
+font-weight: 100; /*_no 'unit' behind it, only numbers. 400 is typical to bold a font, but it depends on the font type_*/
+font-variant-numeric: lining-nums; /*_'Georgia font does not come with lining for numbers, so this function has to be manually included'_*/
+color: #4C4641;
+text-align: center;
+}/*_end of h2_*/
+
+h3 {/*_h3 = header 3; used for columns' heading (within <body>)_*/
+font-family :Georgia , sans-serif; /*_font name, font family (there are 5 main types of font families); 'Georgia' is a commonly used font for headers and is included in github itself, you can customize your own fonts outside of github's list_*/
+font-size: 24px;
+font-weight: 100; /*_no 'unit' behind it, only numbers. 400 is typical to bold a font, but it depends on the font type_*/
+font-variant-numeric: lining-nums; /*_'Georgia font does not come with lining for numbers, so this function has to be manually included'_*/
+color: #5F5851;
+text-align: center;
+}/*_end of h3_*/
+
+h4 {/*_h4 = header 4; used as description directly under h1 (title of the page)_*/
+font-family :Georgia , sans-serif; /*_font name, font family (there are 5 main types of font families); 'Georgia' is a commonly used font for headers and is included in github itself, you can customize your own fonts outside of github's list_*/
+font-size: 18px;
+font-weight: 100; /*_no 'unit' behind it, only numbers. 400 is typical to bold a font, but it depends on the font type_*/
+font-variant-numeric: lining-nums; /*_'Georgia font does not come with lining for numbers, so this function has to be manually included'_*/
+color: #776E65;
+text-align: center;
+}/*_end of h4_*/
+/*_~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~end of {h1} to {h4} style modification~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_*/
+
+
+/*_~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~start of {url links} style modification~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_*/
+a:link {/*_if you have not visited this url before, not hovering over it with your mouse selector or clicking on this link,, it will change to this colour; aka default colour of any links on ur webpage_*/
+color: #44D62C;
+text-decoration: none;
+}/*_end of a:link_*/
+    
+a:visited{/*_if you visited this url before, it will change to this colour_*/
+color: #C724B1;
+text-decoration: line-through;
+}/*_end of a:visited_*/
+    
+a:hover{/*_when u hover ur mouse selector on the link, it will change to this colour_*/
+color: #4D4DFF;
+text-decoration: underline;
+}/*_end of a:hover_*/
+    
+a:active{/*_when u click on it, it will change to this colour_*/
+color: #E0E722;
+text-decoraton: none;
+font-style: oblique;
+background-color: #F5F5F5;
+}/*_end of a:active_*/
+/*_~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~end of {url links} style modification~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_*/
+
+
+/*_~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~end of {naviTop} style modification~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_*/
+/*navigation panel, to be located at the top of the page, sticky function whilst scrolling*/
+    ul {/*_ul = unidentified list; the entire navigation panel is labelled as an unidentified list_*/
+        list-style-type: none;
+        margin: 2px;
+        padding: 1px;
+        overflow: hidden;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        background-color: white;
+        border-style: double none double none;
+        border-color: #312D2A;
+        border-width: 8px;
+   } /*_end of naviTop/ul_*/
+
+    li {/*_li = list; each link is labelled as a list item_*/
+        float: left;
+        display: block;
+        padding: 3px 16px;
+        text-decoration: none;
+    }/*_end of naviTop/li_*/
+/*_end of naviTop_*/
+/*_~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~end of {naviTop} style modification~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_*/
+
+
+/*_~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~end of {footer} style modification~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_*/
+.footer {/*_for the bottom of each page, as long as u include <footer> in the html code of ur page_*/
+position: fixed; /*_many types of positons, fixed = die also will stay here_*/
+width: 100%; /*_100% of the webpage size, as predefined in the beginning of the css file if any; width sizing is very important because it can make or break the webpage style_*/
+/*_if you use {width: 100%}, combined with {left: 0;} and {bottom: 0;}, it will stay on the left and bottom of the entire page; if you used less than 100, the position will turn out slightly to the left even if you align the text to the center_*/
+left: 0; /*_normally spacing is from left to right, so this is a basic controlling of the horizontal positioning_*/
+bottom: 0; /*_normally spacing is from left to right, so this is a basic controlling of the horizontal positioning_*/
+text-align: center; /*_text or pictures or icons or whatever will be styled in the center if your selection property is center_*/
+color: white; /*_names of colours can also be used, but hex code would be better, but if u lazy this works too. hex for white = #ffffff_*/
+background-color:  #7F7A76; /*_included background colour to highlight area of footer_*/
+}/*_end of .footer_*/
+/*_~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~end of footer style modification~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~_*/
+
